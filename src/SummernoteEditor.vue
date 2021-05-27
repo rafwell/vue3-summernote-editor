@@ -7,10 +7,7 @@ import $ from "jquery";
 // You must import summernote js and css for yourself
 
 // https://summernote.org/deep-dive/#callbacks
-const events = {
-  "summernote.change": "summernoteChange",
-  "summernote.image.link.insert": "summernoteImageLinkInsert",
-};
+import events from "./events";
 
 if (!window.SUMMERNOTE_DEFAULT_CONFIGS) {
   window.SUMMERNOTE_DEFAULT_CONFIGS = {};
