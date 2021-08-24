@@ -48,7 +48,10 @@ export default {
   },
   watch: {
     modelValue(newValue) {
-      $(this.elem).summernote("code", newValue);
+      const currValue = $(this.elem).summernote("code");
+      if (newValue != currValue) {
+        $(this.elem).summernote("code", newValue);
+      }
     },
   },
   methods: {
