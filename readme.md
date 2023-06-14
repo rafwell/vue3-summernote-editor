@@ -56,15 +56,15 @@ export default {
 ```
 
 
-### Options
-- `options`: `option[]`
+### Config/Options
+- `:config`: `option[]`
   - configurable settings, see [Summernote options](https://summernote.org/deep-dive/)
   - you can define a global options on a `window.SUMMERNOTE_DEFAULT_CONFIGS`
 
 ### Events
-- `update:modelValue`
+- `@update:modelValue`
   - triggered when summernote value change
 - `summernote bare events`
   - summernote events will be triggered in camelCase
-  - `"summernote.change": "summernoteChange"`
-  - `"summernote.image.link.insert": "summernoteImageLinkInsert"`
+  - `"summernote.change": "@summernoteChange"`
+  - `"summernote.image.link.insert": "@summernoteImageLinkInsert"`
